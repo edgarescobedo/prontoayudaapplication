@@ -1,0 +1,11 @@
+
+<h1 align="center">My Base Application</h1>
+<ul>
+    <li><a routerLink ="/public/welcome">Home</a></li>
+    <li><a routerLink ="/public/about">About</a></li>
+    <li><a routerLink="/admin">Admin</a></li>
+
+    <li style="float:right"><a *ngIf="authservice.isAuthenticated()===true" (click)="logout();">Logout</a></li>
+    <li style="float:right"><a *ngIf="authservice.isAuthenticated()===false" routerLink="/public/login">LogIn</a></li>
+
+</ul>

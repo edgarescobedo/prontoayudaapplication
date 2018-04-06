@@ -1,0 +1,5 @@
+<h1 align="center">My Base Application</h1>
+<ul>
+        <li style="float:right"><a *ngIf="authservice.isAuthenticated()===true" (click)="logout();">Logout</a></li>
+        <li style="float:right"><a *ngIf="authservice.isAuthenticated()===false" routerLink="/public/login">LogIn</a></li>
+</ul>
